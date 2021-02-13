@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="icons/01d.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- GOOGLE FONTS  -->
+    <link  
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+        rel="stylesheet"
+    >
+    <!-- CSS     -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="pd-20 df-col mx-100">
+        <!-- App Title -->
+        <div class="mg-bt15">
+            <h1>Weather App </h1>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form id="request" method="POST">
+                <input 
+                    type="text" 
+                    id="city" 
+                    name="city" 
+                    autocomplete="city" 
+                    id="request" 
+                    placeholder="Inserisci una città" 
+                    title="Compila questo campo."
+                >
+                <button type="submit">Cerca</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Notification -->
+    <div class="notification txtcent"></div>
+
+    <!-- MAIN -->
+    <main class="mg-bt20 pd-20 df-col mx-100">
+        <!-- Weather Container -->
+        <div class="weather-icon df-cent pd-20">
+            <img src="icons/unknown.png" alt="">
+        </div>
+
+        <!-- Temperature -->
+        <div class="temperature-value df-cent mg-bt10">
+            <p>- °
+                <span>C</span>
+            </p>
+        </div>
+        
+        <!-- Temperature Description -->
+        <div class="temperature-description df-cent mg-bt10">
+            <p> - </p>
+        </div>
+
+        <!-- Location -->
+        <div class="location df-cent mg-bt20">
+            <p>-</p>
+        </div>
+
+        <!-- Min/Max Temperature -->
+        <div class="temperature-min-max dl-cent pd-20 mg-bt15 txtcent">
+            <div class="temperature-min">
+                <h4>min</h4>
+                <p>-</p>
+            </div>
+            <div class="temperature-max">
+                <h4>max</h4>
+                <p>-</p>
+            </div>
+        </div>
+
+        <!-- Wind -->
+        <div class="wind pd-10 txtcent df-col mg-bt10">
+            <h2 class="mg-bt10">Vento</h2>
+            <p> - </p>
+        </div>
+
+        <!-- Humidity -->
+        <div class="humidity pd-10 txtcent df-col mg-bt10">
+            <h2 class="mg-bt10">Umidità</h2>
+            <p> - </p>
+        </div>
+
+        <!-- Location Cordinates -->
+        <div class="location-coordinate df-col mg-bt20">
+            <h2 class="mg-bt10 txtcent">Coordinate</h2>
+            <div class="location-lon-lat">
+                <div class="location-lon">
+                    <h4>Lon:</h4>
+                    <p>-</p>
+                </div>
+                <span>|</span>
+                <div class="location-lat">
+                    <h4>Lat:</h4>
+                    <p>-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sunrise/Sunset -->
+        <div class="sunrise-container pd-20 textcent mg-bt10">
+            <div class="sunrise df-col">
+                <div class="sunrise2 txtcent">
+                    <img src="icons/01d.png" alt="">
+                    <h4>Alba</h4>
+                </div>
+                <p>-</p>
+            </div>
+            <div class="sunset df-col">
+                <div class="sunset2 txtcent">
+                    <img src="icons/01n.png" alt="">
+                    <h4>Tramonto</h4>
+                </div>
+                <p>-</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="df-col mg-bt20 mx-100">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/matteorascioni_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/matteorascioni/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/matteorascioni">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <span>Powered By ©MatteoRascioni</span>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="jQuery.js" rel="text/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>

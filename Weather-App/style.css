@@ -1,0 +1,214 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  background: #c7f6f8;
+  color: #16293C;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* UTILITIES */
+/* FLEX COLUMN */
+.df-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FLEX CENTER */
+.dl-cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXT CENTER */
+.txtcent {
+  text-align: center;
+}
+
+/* MARGIN */
+.mg-bt10 {
+  margin-bottom: 10px;
+}
+
+.mg-bt15 {
+  margin-bottom: 15px;
+}
+
+.mg-bt20 {
+  margin-bottom: 20px;
+}
+
+/* PADDING */
+.pd-10 {
+  padding: 10px;
+}
+
+
+.pd-20 {
+  padding: 20px;
+}
+
+/* MAX WIDHT */
+.mx-100 {
+  max-width: 100%;
+}
+
+/* HEADER */
+/* HEADER H1 */
+header  h1 {
+  font-size: 2.5rem;
+}
+
+/* SEARCH BAR */
+.search-bar > form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.search-bar > form > input {
+  width: 60%;
+	font-size: 16px;
+	padding: 10px;
+  border: 1px solid #16293C;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar > form > button {
+  width: 120px;
+	font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background-color: #16293C;
+  color: #fff;
+	cursor: pointer;
+}
+
+/* NOTIFICATION */
+.notification {
+  display: none;
+  background-color: #66c4ff;
+}
+
+.notification p {
+  color: #fff;
+}
+
+/* MAIN */
+main {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* WEATHER ICON */
+.weather-icon img {
+  max-height: 180px;
+}
+
+/* TEMPERATURE VALUE */
+.temperature-value p {
+  font-size: 6rem;
+}
+
+.temperature-value span {
+  font-size: 3rem;
+}
+
+/* TEMPERATURE DESCRIPTION */
+.temperature-description p {
+  font-size: 1.8rem;
+}
+
+/* LOCATION */
+.location p {
+  font-size: 2rem;
+}
+
+/* TEMPERATURE MIN/MAX */
+.temperature-min-max {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.temperature-min-max h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+
+/* LOCATION CORDINATE */
+.location-lon-lat {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.location-lon,
+.location-lat {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.location-coordinate h4, 
+.location-coordinate span {
+  font-size: 1.2rem;
+}
+
+/* SUNRISE/SUNSET */
+.sunrise-container {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.sunrise-container img { 
+  max-height: 90px;
+}
+
+.sunrise-sunset h4 {
+  font-size: 1.3rem;
+}
+
+.sunrise-container p {
+  text-align: center;
+}
+
+/* FOOTER */
+footer > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+footer ul i {
+  font-size: 2rem;
+  color: #16293C;
+}
+
+footer span {
+  font-size: 1.1rem;
+}
