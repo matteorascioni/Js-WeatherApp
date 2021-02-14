@@ -62,7 +62,6 @@ p {
   padding: 10px;
 }
 
-
 .pd-20 {
   padding: 20px;
 }
@@ -156,7 +155,6 @@ main {
   text-transform: capitalize;
 }
 
-
 /* LOCATION CORDINATE */
 .location-lon-lat {
   display: flex;
@@ -211,4 +209,22 @@ footer ul i {
 
 footer span {
   font-size: 1.1rem;
+}
+
+
+/**************
+* MEDIA QUERIES
+**************/
+/* TABLET VERSION */
+@media screen and (min-width: 767px) {
+  .search-bar > form > input {
+    width: 250px;
+  }
+}
+
+/* 1024PX VERSION */
+@media screen and (min-width: 1000px) {
+  .search-bar > form > input {
+    width: 350px;
+  }
 }
