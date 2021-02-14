@@ -55,23 +55,22 @@ $(document).ready( function() {
                 return data;
             })
             .then(function(data) {
-            weather.temperature.value = Math.floor(data.main.temp);
-            weather.temperature.min = Math.floor(data.main.temp_min);
-            weather.temperature.max = Math.floor(data.main.temp_max);
-            weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
-            weather.city = data.name;
-            weather.country = data.sys.country;
-            weather.longitude = data.coord.lon;
-            weather.latitude = data.coord.lat;
-            weather.wind = data.wind.speed;
-            weather.humidity = data.main.humidity;
+                weather.temperature.value = Math.floor(data.main.temp);
+                weather.temperature.min = Math.floor(data.main.temp_min);
+                weather.temperature.max = Math.floor(data.main.temp_max);
+                weather.description = data.weather[0].description;
+                weather.iconId = data.weather[0].icon;
+                weather.city = data.name;
+                weather.country = data.sys.country;
+                weather.longitude = data.coord.lon;
+                weather.latitude = data.coord.lat;
+                weather.wind = data.wind.speed;
+                weather.humidity = data.main.humidity;
 
-            let sunrise = new Date( data.sys.sunrise * 1000 ) ;
-            let sunset = new Date( data.sys.sunset * 1000 );
-            weather.sunrise = ( sunrise.getHours() + ":" + sunrise.getMinutes() );
-            weather.sunset = ( sunset.getHours() + ":" + sunset.getMinutes() );
-
+                let sunrise = new Date( data.sys.sunrise * 1000 ) ;
+                let sunset = new Date( data.sys.sunset * 1000 );
+                weather.sunrise = ( sunrise.getHours() + ":" + sunrise.getMinutes() );
+                weather.sunset = ( sunset.getHours() + ":" + sunset.getMinutes() );
             })
             .then(function() {
                 displayWeather();
@@ -122,11 +121,11 @@ $(document).ready( function() {
             url: api2 + request,
             data: "",
             statusCode: {
-                400: function(){
+                400: function() {
                     alert( "A quanto pare la tua richiesta non è valida. Prova ad inserire un'altra città!");
                 },
 
-                404: function(){
+                404: function() {
                     alert( "Non credo di conoscere quella città, sicuro di averla scritta bene?");
                 }
             }
@@ -148,4 +147,4 @@ $(document).ready( function() {
         sunriseElement.innerHTML = `${weather.sunrise}`;
         sunsetElement.innerHTML = `${weather.sunset}`;
     }
-})
+});
